@@ -420,26 +420,262 @@ Created on Sun Sep 24 23:49:30 2023
 #         print(til.upper())
 
 
+""" INPUT() va WHILE() """
+
+# ism = input("Ismingizni kiriting: ")
+# savol = f"Salom, {ism.title()}. Yoshingiz nechida? "
+# yosh = input(savol)
+# yosh = int(yosh)
+# height = input("Bo'yingiz necha metr? ")
+# height = float(height)
+
+# son = 1
+# while son<=5:
+#     print(son, end=' ')
+#     son +=1
+# print("Dastur tugadi!")
+
+# print("Kiritilgan sonning kvadratini hisoblo'vchi dastur!")
+# savol = ("Istalgan son kiriting ")
+# savol += ("(dasturni to'xtatish uchun 'stop' deb yozing) : ")
+# qiymat = ''
+# while qiymat != 'stop':
+#     qiymat = input(savol)
+#     if qiymat != 'stop':
+#         print(float(qiymat)**2)
+# print("Dastur tugadi!")
 
 
+### ishora: True False
+
+# print("Kiritilgan sonning kvadratini hisoblo'vchi dastur!")
+# savol = ("Istalgan son kiriting ")
+# savol += ("(dasturni to'xtatish uchun 'stop' deb yozing) : ")
+# qiymat = ''
+# ishora = True
+# while ishora:
+#     qiymat = input(savol)
+#     if qiymat == 'stop':
+#         ishora = False
+#     else:
+#         print(float(qiymat)**2)
+# print("Dastur tugadi!")
 
 
+### Break
+
+# print("Kiritilgan sonning kvadratini hisoblo'vchi dastur!")
+# savol = ("Istalgan son kiriting ")
+# savol += ("(dasturni to'xtatish uchun 'stop' deb yozing) : ")
+# while True:
+#     qiymat = input(savol)
+#     if qiymat == 'stop':
+#         break
+#     else:
+#         print(float(qiymat)**2)
+# print("Dastur tugadi!")
+
+# sonlar = list(range(1,11))
+# for son in sonlar: 
+#     if son == 5: # son 5 ga teng bo'lsa kod to'xtaydi
+#         break
+#     print(f"{son} ning kvadrati {son**2} ga teng")
 
 
+### CONTINUE OPERATORI
+
+# sonlar = list(range(1,11))
+# for son in sonlar:
+#     if son == 5: # son 5 ga teng bo'lsa tiskl boshiga qaytadi
+#         continue
+#     print(f"{son} ning kvadrati {son**2} ga teng")
+
+# son = 0
+# while son<10:
+#     son += 1
+#     if son%2!=0:
+#         continue
+#     else:
+#         print(son)
 
 
+### ABADIY TSIKL TUZOG'I
+
+## infinite loop
+# son = 0
+# while son<10:
+#     if son%2!=0:
+#         continue
+#     else:
+#         print(son)
+
+# son = 1
+# while son>0: 
+#     son += 1
+#     if son%2!=0:
+#         continue
+#     else:
+#         print(son)
+
+### Amaliyot
+
+# savol = "yaxshi ko'rgan kitobingizni kiriting "
+# savol += "(dasturni to'xtatish uchun 'stop' ni kiriting): "
+# kitob = ''
+# while kitob != 'stop':
+#     kitob = input(savol)
+#     if kitob != 'stop':
+#         print(float(kitob)**2)
+# print("Dastur tugadi!")
+
+# print("Muzeyga xush kelibsiz!")
+# savol =  "Yoshingizni kiriting (to'xtatish uchun 'stop') : "
+# yosh = ''
+# while yosh != 'stop':
+#     yosh = input(savol)
+#     if yosh != 'stop':
+#         yosh = int(yosh)
+#         if yosh <= 7:
+#             print("Sizga kirish 2000 so'm")
+#         elif 7 < yosh <= 18:
+#             print("Sizga kirish 3000 so'm")
+#         elif 18 < yosh <= 65:
+#             print("Sizga kirish 10000 so'm")
+#         else:
+#             print("Sizga kirish bepul")
+#     elif yosh == 'stop':
+#         break
+# print("Tashrifingiz uchun raxmat! ")
+
+# savol ="Kiritilgan sonning ildizini qaytaruvchi dastur.\n"
+# savol += "Musbat son kiriting "
+# savol += "(dasturni to'xtatish uchun 'exit' deb yozing): "
+# while True:
+#     qiymat = input(savol)
+#     if qiymat=='exit':
+#         break
+#     elif float(qiymat)<0:
+#         continue # agar foydalanuvchi manfiy son kiritsa tsiklni takrorlaymiz
+#     else:
+#         ildiz = float(qiymat)**(0.5)
+#         print(f"{qiymat} ning ildizi {ildiz} ga teng")
+    
+
+## WHILE YORDAMIDA RO'YXATNI TO'LDIRISH
+
+# print("Do'stlani ro'yxati.")
+# ismlar = []
+# n = 1
+# while True:
+#     savol = f"{n}-do'stingizni ismi: "
+#     ism = input(savol)
+#     ismlar.append(ism)
+#     savol2 = input("Yana ism kiritasizmi ('ha' yoki 'yo'q')")
+#     if savol2 == 'ha':
+#         n+=1
+#         continue
+#     else:
+#         break
+# print("Do'stlaringizni ro'yxati.")
+# for ism in ismlar:
+#     print(ism.title())
+    
+
+## WHILE YORDAMIDA LUG'ATNI TO'LDIRISH
+
+# print("Do'stlaringiz yoshini saqlaymiz.")
+# dostlar = {}
+# ishora = True
+# while ishora:
+#     ism = input("Do'stingiz ismini kiriting: ")
+#     yosh = input(f"{ism.title()}ning yoshini kiriting: ")
+#     dostlar[ism] = int(yosh) # ism kalit, yosh qiymat
+#     javob = input("Yana ma'lumot qo'shasizmi? (ha/yo'q)")
+#     if javob == "yo'q":
+#         ishora = False
+# for ism, yosh in dostlar.items():
+#     print(f"{ism.title()} {yosh} yoshda")      
+
+## RO'YXAT ELEMENTLARINI O'CHIRISH
+
+# cars = ['lacetti','nexia','toyota','nexia','audi','malibu','nexia']
+# while 'nexia' in cars: # toki nexia cars ro'yxati ichida ekan...
+#     cars.remove('nexia') # nexia ni ro'yxatdan olib tashla
+# print(cars)
+
+## RO'YXATDAN RO'YXATGA ELEMENT KO'CHIRISH
+
+# talabalar = ['hasan', 'husan', 'olim', 'botir']
+# baholangan_talabalar = {}
+# while talabalar:
+#     talaba = talabalar.pop()
+#     baho = input(f"{talaba.title()}ning bahosini kiriting: ")
+#     print(f"{talaba.title()} baholandi")
+#     baholangan_talabalar[talaba] = baho
 
 
+### AMALIYOT ###
+
+# print("Buyurtma qabul qiluvchi dasturimizga xush kelibsiz!")
+# buyurtmalar = []
+# while True:
+#     buyurtma = input("Buyurtmani kiriting: ")
+#     buyurtmalar.append(buyurtma)
+#     savol = input("\nYana buyurtma berasizmi? (ha/yo'q) ")
+#     if savol == 'ha':
+#         continue
+#     else:
+#         break
+# savol1 = "\nBuyurtmalar qabul qilindi!\nKo'rishni hohlaysizmi? (ha/yo'q) "
+# javob = input(savol1)
+# if javob == 'ha':
+#     print("\nBuyurtmalar ro'yxati.")
+#     for buyurtma in buyurtmalar:
+#         print(f"{buyurtma.title()}")
+# else:
+#     print("\nRaxmat sog' bo'ling! ")
 
 
+# print("e-Bozor mahsulotlar do'koniga xush kelibsiz!")
+# bozor = {}
+# ishora = True
+# while ishora:
+#     mahsulot = input("\nMahsulot nomini kiriting: ")
+#     narh = int(input(f"{mahsulot.title()}ning narhini kiriting: "))
+#     bozor[mahsulot] = narh
+#     savol = input(f"\nYana e-Bozor dasturidan foydalanasizmi? (ha/yo'q) ")
+#     if savol == 'ha':
+#         continue
+#     else:
+#         ishora = False
+# javob = input(f"\nMahsulotlar va narhlari qabul qilindi!\nKo'rishni hohlaysizmi? (ha/yo'q)")
+# if javob == 'ha':
+#     for m, n in bozor.items():
+#         print(f"{m.title()}ning narhi {n} so'm")
+# else:
+#     print("e-Bozor dasturimizdan foydalanganingiz uchun raxmat :)\nDatur to'xtatildi!")
 
 
+# bozor = {'uzum': 20000, 'olma': 13000, 'pamidor': 19000, 'anor': 23000}
+# buyurtmalar = ['olma', 'uzum', 'anor']
+# for buyurtma in bozor.keys():
+#     if buyurtma in buyurtmalar:
+#         print(f"{buyurtma.title()}ning narhi {bozor[buyurtma]}")
+#     else:
+#         print(f"{buyurtma.title()} mahsulotining narhi ko'rsatilmagan.")
+    
+# buyurtmalar = ['olma','anjir','uzum','qovun']
+# mahsulotlar = {'olma':20000,
+#                'shaftoli':25000,
+#                'tarvuz':18000,
+#                'uzum':22000}
 
-
-
-
-
-
-
+# while buyurtmalar:
+#     buyurtma = buyurtmalar.pop()
+#     if buyurtma in mahsulotlar.keys():
+#         narh = mahsulotlar[buyurtma]
+#         print(f"{buyurtma.title()} - {narh} so'm")
+#     else:
+#         print(f"Bizda {buyurtma} yo'q")
 
 
