@@ -54,8 +54,8 @@ Created on Sun Sep 24 23:49:30 2023
 
 
 
-# j_son = int(input("juft son kiriting: "))
-# if j_son % 2:
+# son = int(input("juft son kiriting: "))
+# if son % 2:
 #     print("juft son kiriting")
 # else:
 #     print("raxmat")
@@ -446,7 +446,7 @@ Created on Sun Sep 24 23:49:30 2023
 # print("Dastur tugadi!")
 
 
-### ishora: True False
+# ishora: True False
 
 # print("Kiritilgan sonning kvadratini hisoblo'vchi dastur!")
 # savol = ("Istalgan son kiriting ")
@@ -462,7 +462,7 @@ Created on Sun Sep 24 23:49:30 2023
 # print("Dastur tugadi!")
 
 
-### Break
+# Break
 
 # print("Kiritilgan sonning kvadratini hisoblo'vchi dastur!")
 # savol = ("Istalgan son kiriting ")
@@ -482,7 +482,7 @@ Created on Sun Sep 24 23:49:30 2023
 #     print(f"{son} ning kvadrati {son**2} ga teng")
 
 
-### CONTINUE OPERATORI
+# CONTINUE OPERATORI
 
 # sonlar = list(range(1,11))
 # for son in sonlar:
@@ -499,9 +499,10 @@ Created on Sun Sep 24 23:49:30 2023
 #         print(son)
 
 
-### ABADIY TSIKL TUZOG'I
+# ABADIY TSIKL TUZOG'I
 
-## infinite loop
+# infinite loop
+
 # son = 0
 # while son<10:
 #     if son%2!=0:
@@ -517,7 +518,7 @@ Created on Sun Sep 24 23:49:30 2023
 #     else:
 #         print(son)
 
-### Amaliyot
+# Amaliyot
 
 # savol = "yaxshi ko'rgan kitobingizni kiriting "
 # savol += "(dasturni to'xtatish uchun 'stop' ni kiriting): "
@@ -561,7 +562,7 @@ Created on Sun Sep 24 23:49:30 2023
 #         print(f"{qiymat} ning ildizi {ildiz} ga teng")
     
 
-## WHILE YORDAMIDA RO'YXATNI TO'LDIRISH
+# WHILE YORDAMIDA RO'YXATNI TO'LDIRISH
 
 # print("Do'stlani ro'yxati.")
 # ismlar = []
@@ -596,7 +597,7 @@ Created on Sun Sep 24 23:49:30 2023
 # for ism, yosh in dostlar.items():
 #     print(f"{ism.title()} {yosh} yoshda")      
 
-## RO'YXAT ELEMENTLARINI O'CHIRISH
+# RO'YXAT ELEMENTLARINI O'CHIRISH
 
 # cars = ['lacetti','nexia','toyota','nexia','audi','malibu','nexia']
 # while 'nexia' in cars: # toki nexia cars ro'yxati ichida ekan...
@@ -678,4 +679,47 @@ Created on Sun Sep 24 23:49:30 2023
 #     else:
 #         print(f"Bizda {buyurtma} yo'q")
 
+""" FUNKSIYALAR """
 
+# def ism_yosh(ism, yosh, yil=2023):
+#     print(f"Salom, {ism.title()}. Siz {yil - yosh} yilda tug'ilgansiz.  ")
+#
+# ism_1 = input("Ismingizni kiriting: ")
+# yosh_1 = int(input("Yoshingizni kiriting: "))
+# ism_yosh(ism_1, yosh_1)
+
+# def son_1(son):
+#     kv = son**2
+#     kub = son**3
+#     print(f"sonning kvadrati {kv} ga teng, kubi esa {kub} ga teng.")
+#
+# raqam = int(input(f"Raqam kiriting: "))
+# son_1(raqam)
+
+# def juft_toq(son):
+#     if son%2:
+#         print(f"Kiritilgan son toq, {son}")
+#     else:
+#         print(f"Kiritilgan son juft, {son}")
+# s = int(input(f"Son kiriting: "))
+# juft_toq(s)
+
+# def tekshiruv(son):
+#     for n in range(2,11):
+#         if not son%n:
+#             print(f"{son} {n} ga qoldiqisiz bo'linadi.")
+# s = int(input(f"son kiriting: "))
+# tekshiruv(s)
+
+""" RANGE yoyilmasi """
+
+def oraliq(min,max,qadam=None):
+    sonlar = []
+    while min<max:
+        sonlar.append(min)
+        min +=n
+    return sonlar
+mi = int(input(f"minimum sonni kiritng: "))
+ma = int(input(f"maximum sonni kiritng: "))
+n = int(input(f"qadamni kiritng: "))
+print(oraliq(mi,ma,n))
