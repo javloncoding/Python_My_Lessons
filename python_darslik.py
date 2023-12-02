@@ -53,7 +53,6 @@ Created on Sun Sep 24 23:49:30 2023
 #     print("musbat son kiriting")
 
 
-
 # son = int(input("juft son kiriting: "))
 # if son % 2:
 #     print("juft son kiriting")
@@ -68,7 +67,6 @@ Created on Sun Sep 24 23:49:30 2023
 #     print("sizga kirish 10000 so'm")
 # elif yosh >=18:
 #     print("sizga kirish 20000 so'm")
-
 
 
 # mahsulot = ['ananas' , 'anor', 'banan', 'uzum', 'nok', 'olma', 'gilos', 'anjir', 'shaftoli', 'behi']
@@ -102,7 +100,6 @@ Created on Sun Sep 24 23:49:30 2023
 #         print(bor)
 # else:
 #     print(f"Do'konimizda quyidagi mahsulotlar bor:")
-        
 
 
 # login = ['java', 'admin', 'ake', 'mrx']
@@ -131,8 +128,8 @@ Created on Sun Sep 24 23:49:30 2023
 #             print(f"Do'konimizda {mahsulot} bor")
 #         else:
 #             print(f"Do'konimizda {mahsulot} yo'q")
-# else: 
-#     print("Savatingiz bo'sh")            
+# else:
+#     print("Savatingiz bo'sh")
 
 
 # mahsulotlar = ['un', "yog'", "sovun", 'tuxum', 'piyoz',
@@ -153,7 +150,7 @@ Created on Sun Sep 24 23:49:30 2023
 #       print(mahsulot)
 # else:
 #   print("Siz so'ragan barcha mahsulotlar do'konimizda bor")
-    
+
 
 # users = ['alisher1983','aziza','yasina', 'umar']
 # login = input("Yangi login tanlang:" )
@@ -175,7 +172,7 @@ Created on Sun Sep 24 23:49:30 2023
 # if natija == None:
 #     print("Bunday so'z mavjud emas")
 # else:
-#     print(f"{kalit} tarjimasi {natija}" )    
+#     print(f"{kalit} tarjimasi {natija}" )
 
 
 ### items() method ###
@@ -191,7 +188,7 @@ Created on Sun Sep 24 23:49:30 2023
 # for kalit, qiymat in men_haqimda.items():
 #     print(f"Kalit: {kalit}")
 #     print(f"Qiymat: {qiymat}")
-        
+
 # malumot = {
 #     'java' : 'redmi 9A',
 #     'otaw' : 'redmi S12',
@@ -200,7 +197,7 @@ Created on Sun Sep 24 23:49:30 2023
 #     }
 # for k, q in malumot.items():
 #     print(f"{k.title()}ning telefoni {q.title()}")
-    
+
 
 ### .keys() method ###
 
@@ -314,7 +311,6 @@ Created on Sun Sep 24 23:49:30 2023
 #         print(f"{taom1.title()} taom bizning restoranda mavjud emas!")
 
 
-
 ### Sets (malumotlar turi) ###
 
 # toys = {"ball", "car", "mishka", "ball", "lamp", "raketa"}
@@ -370,17 +366,17 @@ Created on Sun Sep 24 23:49:30 2023
 #     malibu['karobka'] = ['mexanika']
 # for malibu in malibus[7:]:
 #     malibu['rang'] = ['qizil']
-    
+
 # for malibu in malibus:
 #     if malibu['karobka']=='avtomat':
 #         malibu['narh']=55000
 #     else:
 #         malibu['narh']=50000
-# for malibu in malibus:    
+# for malibu in malibus:
 #     print(malibu)
 
 
-### LUG'ATNI ichiga LIST joylash 
+### LUG'ATNI ichiga LIST joylash
 
 # dasturchilar = {
 #     'javlon':['python', 'django', 'sql', 'c++'],
@@ -476,7 +472,7 @@ Created on Sun Sep 24 23:49:30 2023
 # print("Dastur tugadi!")
 
 # sonlar = list(range(1,11))
-# for son in sonlar: 
+# for son in sonlar:
 #     if son == 5: # son 5 ga teng bo'lsa kod to'xtaydi
 #         break
 #     print(f"{son} ning kvadrati {son**2} ga teng")
@@ -511,7 +507,7 @@ Created on Sun Sep 24 23:49:30 2023
 #         print(son)
 
 # son = 1
-# while son>0: 
+# while son>0:
 #     son += 1
 #     if son%2!=0:
 #         continue
@@ -560,7 +556,7 @@ Created on Sun Sep 24 23:49:30 2023
 #     else:
 #         ildiz = float(qiymat)**(0.5)
 #         print(f"{qiymat} ning ildizi {ildiz} ga teng")
-    
+
 
 # WHILE YORDAMIDA RO'YXATNI TO'LDIRISH
 
@@ -580,7 +576,7 @@ Created on Sun Sep 24 23:49:30 2023
 # print("Do'stlaringizni ro'yxati.")
 # for ism in ismlar:
 #     print(ism.title())
-    
+
 
 ## WHILE YORDAMIDA LUG'ATNI TO'LDIRISH
 
@@ -595,7 +591,7 @@ Created on Sun Sep 24 23:49:30 2023
 #     if javob == "yo'q":
 #         ishora = False
 # for ism, yosh in dostlar.items():
-#     print(f"{ism.title()} {yosh} yoshda")      
+#     print(f"{ism.title()} {yosh} yoshda")
 
 # RO'YXAT ELEMENTLARINI O'CHIRISH
 
@@ -664,7 +660,7 @@ Created on Sun Sep 24 23:49:30 2023
 #         print(f"{buyurtma.title()}ning narhi {bozor[buyurtma]}")
 #     else:
 #         print(f"{buyurtma.title()} mahsulotining narhi ko'rsatilmagan.")
-    
+
 # buyurtmalar = ['olma','anjir','uzum','qovun']
 # mahsulotlar = {'olma':20000,
 #                'shaftoli':25000,
@@ -713,13 +709,68 @@ Created on Sun Sep 24 23:49:30 2023
 
 """ RANGE yoyilmasi """
 
-def oraliq(min,max,qadam=None):
-    sonlar = []
-    while min<max:
-        sonlar.append(min)
-        min +=n
-    return sonlar
-mi = int(input(f"minimum sonni kiritng: "))
-ma = int(input(f"maximum sonni kiritng: "))
-n = int(input(f"qadamni kiritng: "))
-print(oraliq(mi,ma,n))
+
+# def oraliq(min,max,qadam=None):
+#     sonlar = []
+#     while min<max:
+#         sonlar.append(min)
+#         min +=n
+#     return sonlar
+# mi = int(input(f"minimum sonni kiritng: "))
+# ma = int(input(f"maximum sonni kiritng: "))
+# n = int(input(f"qadamni kiritng: "))
+# print(oraliq(mi,ma,n))
+
+# def mijoz_info(ism, familiya, tyil, tjoy, tel=None):
+#     """Mijoz haqidagi ma'lumotlarni lug'at ko'rinishida qaytaruvchi funksiya"""
+#     mijoz = {'ism':ism,
+#              'familiya':familiya,
+#              'tyil':tyil,
+#              'yoshi':2023-tyil,
+#              'tjoy':tjoy,
+#              'telefon':tel}
+#     return mijoz
+# print("Mijoz haqida ma'lumotlarni kiriting.")
+# mijozlar =[]
+# while True:
+#     ism = input("Ismi: ")
+#     familiya = input("Familiyasi: ")
+#     tyil = int(input("Tug'ilgan yili: "))
+#     tjoy = input("Tug'ilgan joyi: ")
+#     telefon = input("Telefon raqami: ")
+#     mijozlar.append(mijoz_info(ism, familiya, tyil, tjoy, telefon))
+#     javob = input("Davom etasizmi? (ha/yo'q)")
+#     if javob!='ha':
+#         break
+# print("Mijozlar:")
+# for mijoz in mijozlar:
+#     print(f"{mijoz['ism'].title()} {mijoz['familiya'].title()},"
+#           f"{mijoz['yoshi']} yoshda, telefoni: {mijoz['telefon']}")
+#
+# def fibonacci(n):
+#     sonlar = []
+#     for x in range(n):
+#         if x==0 or x==1:
+#             sonlar.append(1)
+#         else:
+#             sonlar.append(sonlar[x-1]+sonlar[x-2])
+#     return sonlar
+#
+# print(fibonacci(10))
+
+# def tub_sonlar_top(min, max):
+#     tub_sonlar = []
+#     for n in range(min, max + 1):
+#         tub = True
+#         if (n == 1):
+#             tub = False
+#         elif (n == 2):
+#             tub = True
+#         else:
+#             for x in range(2, n):
+#                 if (n % x == 0):
+#                     tub = False
+#         if tub:
+#             tub_sonlar.append(n)
+#     return tub_sonlar
+# tub_sonlar_top(1, 20)
