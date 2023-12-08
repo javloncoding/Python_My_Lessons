@@ -774,3 +774,235 @@ Created on Sun Sep 24 23:49:30 2023
 #             tub_sonlar.append(n)
 #     return tub_sonlar
 # tub_sonlar_top(1, 20)
+
+
+# def katta_harf(matnlar):
+#     for i in range(len(matnlar)):
+#         matnlar[i]=matnlar[i].title()
+#
+# ismlar = ['ali', 'vali', 'hasan', 'husan']
+# katta_harf(ismlar)
+# print(ismlar)
+#
+# def katta_harf(matnlar):
+#     matnlar = matnlar[:]
+#     for i in range(len(matnlar)):
+#         matnlar[i]=matnlar[i].title()
+#     return matnlar
+#
+# ismlar = ['ali', 'vali', 'hasan', 'husan']
+# yangi_ismlar = katta_harf(ismlar)
+# print(ismlar)
+# print(yangi_ismlar)
+
+# talabalar = ['ali', 'vali', 'hasan', 'husan']
+#
+
+# def bahola(ismlar):
+#     baholar = {}
+#     for ism in ismlar:
+#         baho = input(f"Talaba {ism.title()}ning bahosini kiriting: ")
+#         baholar[ism] = baho
+#     return baholar
+#
+#
+# baholar = bahola(talabalar)
+# print(baholar)
+# print(talabalar)
+
+# s = [2 ,3, 3,4,5,6,5]
+# def sd(*d):
+#     n = 0
+#     for m in s:
+#         n += m
+#     return n
+# d = sd(s)
+# print(d)
+
+# def my_func(*son):
+#     kopaytma = 1
+#     for kopayuvchi in sonlar:
+#         kopaytma *= kopayuvchi
+#     return kopaytma
+# sonlar = [2,5]
+# natija = my_func(sonlar)
+# print(natija)
+
+# def talaba_info(ism, familiya, **kwargs):
+#     kwargs['ism']=ism
+#     kwargs['familiya']=familiya
+#     return kwargs
+#
+# talaba = talaba_info('olim','olimov',tyil=1995,fakultet='IT',yonalish='AT')
+# print(talaba)
+
+"""MODULLAR"""
+
+# import math
+#
+# x=400
+# print(math.sqrt(x))
+# print(pow(5,5))
+#
+# from math import pi
+# print(pi)
+# print(math.log2(8))
+# print(math.log10(100))
+#
+# import random as r # random modulini r deb chaqirayapmiz
+#
+# son = r.randint(0,100) # 0 va 100 oralig'ida tasodifiy son
+# print(son)
+#
+# ismlar = ['olim','anvar','hasan','husan']
+# ism = r.choice(ismlar) # ismlar dan tasodifiy ism tanlaymiz
+# print(ism)
+# print(r.choice(ism)) # ismdan tasodifiy harf tanlaymiz
+#
+# x = list(range(0,51,5))
+# print(x)
+# print(r.choice(x))
+#
+# x = list(range(11))
+# print(x)
+# r.shuffle(x)
+# print(x)
+
+"""LAMBDA"""
+# lambda argument:ifoda
+
+# import math
+# uzunlik = lambda pi, r : 2*pi*r
+# print(uzunlik(math.pi,10))
+#
+# product = lambda x, y : x ** y
+# print(product(3, 2))
+#
+# def daraja(n):
+#     return lambda x : x**n
+#
+# kvadrat = daraja(2)
+# kub = daraja(3)
+# print(f"3-ning kvadrati {kvadrat(3)} ga, kubi {kub(3)} ga teng")
+#
+# from math import sqrt
+#
+# sonlar = list(range(11)) # 0 dan 10 gacha sonlar ro'yxati
+# ildizlar = list(map(sqrt,sonlar))
+# sonlar = list(range(11)) # 0 dan 10 gacha sonlar ro'yxati
+#
+# def daraja2(x):
+#     """Berilgan sonning kvadratini qaytaruvchi funksiya"""
+#     return x*x
+#
+# print(list(map(daraja2,sonlar))) # sonlar ning kvadratini hisoblaymiz
+#
+# kvadratlar = list(map(lambda x:x*x,sonlar))
+# print(kvadratlar)
+#
+# kvadratlar = []
+# for son in sonlar:
+#     kvadratlar.append(son*son)
+#
+# a = [4, 5, 6]
+# b = [7, 8, 9]
+# a_plus_b = list(map(lambda x, y: x + y, a, b))
+# print(a_plus_b)
+#
+# ismlar = ['hasan','husan','olim','umid']
+# print(list(map(lambda matn:matn.upper(),ismlar)))
+#
+# import random as r
+#
+# sonlar = r.sample(range(100),10) # 0-99 oralig'ida 10 ta tasodifiy sonlar
+#
+# def juftmi(x):
+#     """x juft bo'lsa True, aks holda False qaytaruvchu funksiya"""
+#     return x%2==0
+#
+# juft_sonlar = list(filter(juftmi,sonlar))
+# print(sonlar)
+# print(juft_sonlar)
+#
+# import random as r
+#
+# sonlar = r.sample(range(100),10) # 0-99 oralig'ida 10 ta tasodifiy sonlar
+# juft_sonlar = list(filter(lambda son: son%2==0,sonlar))
+#
+# print(sonlar)
+# print(juft_sonlar)
+#
+# mevalar = ['olma','anor','anjir','shaftoli',"o'rik","tarvuz","qovun","banan"]
+#
+# mevalar_b = list(filter(lambda meva:meva.startswith('b'),mevalar))
+# print(mevalar_b)
+#
+# mevalar2 = list(filter(lambda meva:len(meva)<=5, mevalar))
+# print(mevalar2)
+#
+# list(filter(lambda meva:(meva.startswith('a') and meva.endswith('r')), mevalar))
+
+
+
+# """ SON TOPISH O'YINI """
+#
+# import random as r
+#
+# print("Salom son topish o'yinini o'ynimiz. ")
+# def sontop(x=10):
+#     print("Men 1 dan 10 gacha son o'yladim topib ko'ringchi!")
+#     taxmin_son = r.randint(1, x)
+#     taxminlar = 0
+#     while True:
+#         taxminlar += 1
+#         savol = int(input(">>> "))
+#         if savol < taxmin_son:
+#             print("Men o'ylagan son bundan kattaroq.")
+#         elif savol > taxmin_son:
+#             print("Men o'ylagan son bundan kichikroq.")
+#         else:
+#             break
+#     print(f"Siz {taxminlar} ta taxmin bilan topdingiz :)\n")
+#     return taxminlar
+# def sontop_pc(x=10):
+#     input(f"1 dan {x} gacha son o'ylang va istalgan tugmani bosing. Men topaman.\n>>>")
+#     quyi = 1
+#     yuqori = x
+#     taxminlar = 0
+#     while True:
+#         taxminlar += 1
+#         if quyi != yuqori:
+#             taxmin = r.randint(quyi, yuqori)
+#         else:
+#             taxmin = quyi
+#         javob = input(
+#             f"Siz {taxmin} sonini o'yladingiz: to'g'ri (t),"
+#             f"men o'ylagan son bundan kattaroq (+), yoki kichikroq (-)".lower()
+#         )
+#         if javob == "-":
+#             yuqori = taxmin - 1
+#         elif javob == "+":
+#             quyi = taxmin + 1
+#         else:
+#             break
+#     print(f"Men {taxminlar} ta taxmin bilan topdim!")
+#     return taxminlar
+# def play(x=10):
+#     yana = True
+#     while yana:
+#         taxminlar_pc = sontop_pc(x)
+#         taxminlar_user = sontop(x)
+#
+#         if taxminlar_user > taxminlar_pc:
+#             print(f"Men {taxminlar_pc} taxmin bilan topdim va  yutdim!")
+#         elif taxminlar_user < taxminlar_pc:
+#             print(f"Siz {taxminlar_user} taxmin bilan topdingiz va yutdingiz!")
+#         else:
+#             print("Durrang!")
+#         yana = int(input("Yana o'ynaymizmi? Ha(1)/Yo'q(0):"))
+# play()
+
+
+
+
+
