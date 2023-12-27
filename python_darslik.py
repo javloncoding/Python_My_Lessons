@@ -942,9 +942,97 @@ Created on Sun Sep 24 23:49:30 2023
 #
 # list(filter(lambda meva:(meva.startswith('a') and meva.endswith('r')), mevalar))
 
+"""OOP - Object Oriented Programming"""
+
+# class Talaba:
+#     def __init__(self, ism, familiya, tyil, email, tel):
+#         self.ism = ism
+#         self.familiya = familiya
+#         self.tyil = tyil
+#         self.email = email
+#         self.tel = tel
+#
+#     def get_name(self):
+#         return self.ism
+#
+#     def get_age(self, yil):
+#         return yil - self.tyil
+#
+#     def get_email(self):
+#         return self.email
+#
+#     def get_tel(self):
+#         return self.tel
+#
+#     def tanishtir(self):
+#         return f"Talabaning ism familiyasi: {self.ism} {self.familiya}\nTalabaning tug'ilgan yili: {self.tyil} - yil\n"\
+#                f"Talabaning emaili: {self.email}\nTalabaning tel raqami: {self.tel}"
+#
+#
+# talaba1 = Talaba("Olim", "Olimov", 2000, "olimov2000@gmail.com", 901923800)
+# talaba2 = Talaba("Hasan", "Asqarov", 2002, "hasanov2002@gmail.com", 993924802)
+# talaba3 = Talaba("Husan", "Asqarov", 2001, "husanov2001@gmail.com", 912013201)
+# print(talaba1.tanishtir())
 
 
+# class Talaba:
+#     """Talaba nomli klass yaratamiz"""
+#
+#     def __init__(self, ism, familiya, tyil):
+#         """Talabaning xususiyatlari"""
+#         self.ism = ism
+#         self.familiya = familiya
+#         self.tyil = tyil
+#         self.bosqich = 1
+#
+#     def get_info(self):
+#         """Talaba haqida ma'lumot"""
+#         return f"{self.ism} {self.familiya}" #{self.bosqich}-bosqich talabasi
+#
+#     def set_bosqich(self, bosqich):
+#         """Talabaning kursini yangilovchi metod"""
+#         self.bosqich = bosqich
+#
+#     def update_bosqich(self):
+#         """Talabanining bosqichini 1taga ko'paytirish"""
+#         self.bosqich += 1
+# talaba1 = Talaba("Alijon","Valiyev",2000)
+# talaba1.set_bosqich(2)
+# talaba1.update_bosqich()
+# print(talaba1.get_info())
+#
+#
+# class Fan():
+#     def __init__(self, nomi):
+#         self.nomi = nomi
+#         self.talabalar_soni = 0
+#         self.talabalar = []
+#
+#     def add_student(self, talaba):
+#         """Fanga talabalar qo'shish"""
+#         self.talabalar.append(talaba)
+#         self.talabalar_soni += 1
+#
+#     def get_students(self):
+#         return [talaba.get_info() for talaba in self.talabalar]
+#
+#     def get_students_num(self):
+#         """Fanga yozilgan talabalar soni"""
+#         return self.talabalar_soni
+#
+# def see_methods(klass):
+#     return [method for method in dir(klass) if method.startswith('__') is False]
+# print(see_methods(Fan))
+# print(talaba1.__dict__)
+# print(talaba1.__dict__.keys())
+#
+# matematika = Fan("Oliy Matematika")
+# talaba1 = Talaba("Alijon","Valiyev",2000)
+# talaba2 = Talaba("Hasan","Alimov",2001)
+# talaba3 = Talaba("Akrom","Boriyev",2001)
+#
+# matematika.add_student(talaba1)
+# matematika.add_student(talaba2)
+# matematika.add_student(talaba3)
 
-
-
-
+# print(matematika.get_students())
